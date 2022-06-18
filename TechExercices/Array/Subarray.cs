@@ -5,21 +5,16 @@ public class Subarray
     //LeetCode 53. Maximum Subarray
     public int MaxSubArray(int[] nums)
     {
-        int maxSum = int.MinValue;
+        int[] table = new int[nums.Length];
+        int maxSum = nums[0];
+        table[0] = nums[0];
 
-        for (int i = 0; i < nums.Length; i++)
+        for (int i = 1; i < nums.Length; i++)
         {
-            int currentMax = 0;
-            for (int j = i; j < nums.Length; j++)
-            {
-                currentMax += nums[j];
-            }
-
-            if (currentMax >= maxSum)
-            {
-                maxSum = currentMax;
-            }
+            table[i] = Math.Max(nums[i], nums[i] + table[i - 1]);
+            maxSum = Math.Max(maxSum, table[i]);
         }
+
         return maxSum;
     }
 }

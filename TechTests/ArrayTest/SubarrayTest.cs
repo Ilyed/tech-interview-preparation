@@ -2,7 +2,7 @@ using TechExercices.Array;
 
 namespace TechTests.ArrayTest;
 
-public class UnitTest1
+public class SubarrayTest
 {
     [Fact]
     public void MaxSubArrayTest()
