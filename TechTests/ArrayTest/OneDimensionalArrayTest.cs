@@ -1,15 +1,16 @@
 using TechExercices.Array;
 
-namespace TechTests.ArrayTest;
-
-public class OneDimensionalArrayTest
+namespace TechTests.ArrayTest
 {
-    [Fact]
-    public void ContainsDuplicateTest()
+    public class OneDimensionalArrayTest
     {
-        OneDimensionalArray testSubArray = new OneDimensionalArray();
-        int[] input = new[] { 1,2,3,1};
-        bool result = testSubArray.ContainsDuplicate(input);
-        Assert.True(result);
+        [Fact]
+        public void ContainsDuplicateTest()
+        {
+            OneDimensionalArray testSubArray = new OneDimensionalArray();
+            int[] input = new[] { 1,2,3,1};
+            bool result = testSubArray.ContainsDuplicate(input);
+            Assert.True(result);
+        }
     }
 }

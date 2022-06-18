@@ -1,23 +1,24 @@
-﻿namespace TechExercices.Array;
-
-public class OneDimensionalArray
+﻿namespace TechExercices.Array
 {
-    //Leetcode 217
-    public bool ContainsDuplicate(int[] nums)
+    public class OneDimensionalArray
     {
-        HashSet<int> numbers = new HashSet<int>();
-        for (int i = 0; i < nums.Length; i++)
+        //Leetcode 217
+        public bool ContainsDuplicate(int[] nums)
         {
-            if (numbers.Contains(nums[i]))
+            HashSet<int> numbers = new HashSet<int>();
+            for (int i = 0; i < nums.Length; i++)
             {
-                return true;
+                if (numbers.Contains(nums[i]))
+                {
+                    return true;
+                }
+                else
+                {
+                    numbers.Add(nums[i]);
+                }
             }
-            else
-            {
-                numbers.Add(nums[i]);
-            }
-        }
         
-        return false;
-    } 
+            return false;
+        } 
+    }
 }
