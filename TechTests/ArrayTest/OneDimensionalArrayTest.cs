@@ -1,4 +1,4 @@
-using TechExercices.Array;
+using TechExercises.Array;
 
 namespace TechTests.ArrayTest
 {

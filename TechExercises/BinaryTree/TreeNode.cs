@@ -1,4 +1,5 @@
-﻿namespace TechExercices.BinaryTree
+﻿#pragma warning disable CS8625
+namespace TechExercises.BinaryTree
 {
     // Definition for a binary tree node. Taken From Leetcode
     public class TreeNode {

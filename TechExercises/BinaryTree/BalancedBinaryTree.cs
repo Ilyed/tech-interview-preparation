@@ -1,4 +1,4 @@
-﻿namespace TechExercices.BinaryTree
+﻿namespace TechExercises.BinaryTree
 {
     public class BalancedBinaryTree
     {

@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechTests", "TechTests\TechTests.csproj", "{9AFE28D1-0379-4703-89F9-E25F700114C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechExercices", "TechExercices\TechExercices.csproj", "{F0F8CA94-0E49-4DBF-AC9C-33C2D1864501}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechExercises", "TechExercises\TechExercises.csproj", "{F0F8CA94-0E49-4DBF-AC9C-33C2D1864501}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

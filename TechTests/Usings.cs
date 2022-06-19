@@ -1,3 +1,3 @@
 global using Xunit;
 
-global using TechExercices;
+global using TechExercises;

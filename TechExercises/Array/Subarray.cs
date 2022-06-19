@@ -1,4 +1,4 @@
-﻿namespace TechExercices.Array
+﻿namespace TechExercises.Array
 {
     public class Subarray
     {
