@@ -10,11 +10,11 @@ public class TreeSearch
     {
         if (p.val < root.val && q.val < root.val)
         {
-            LowestCommonAncestor(root.left, p, q);
+          return  LowestCommonAncestor(root.left, p, q);
         }
         if (p.val > root.val && q.val > root.val)
         {
-            LowestCommonAncestor(root.right, p, q);
+          return  LowestCommonAncestor(root.right, p, q);
         }
         return root;
     }
