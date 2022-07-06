@@ -29,8 +29,31 @@ public class TreeSearch
         {
             return 0;
         }
+
         int leftDepth = MaxDepth(root.left);
         int rightDepth = MaxDepth(root.right);
-        return  Math.Max(leftDepth,rightDepth)+1;
+        return Math.Max(leftDepth, rightDepth) + 1;
+    }
+
+    //543. Diameter of Binary Tree
+    public int DiameterOfBinaryTree(TreeNode root)
+    {
+        int current = int.MinValue;
+        DiameterCalculater(root, ref current);
+        return current;
+    }
+
+    public int DiameterCalculater(TreeNode root, ref int current)
+    {
+        if (root == null)
+        {
+            return 0;
+        }
+
+        int left = DiameterCalculater(root.left, ref current);
+        int right = DiameterCalculater(root.right, ref current);
+        current = Math.Max(current, left + right);
+
+        return Math.Max(left, right) + 1;
     }
 }
